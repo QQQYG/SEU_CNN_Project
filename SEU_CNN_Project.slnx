@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="SEU_CNN_Project/SEU_CNN_Project.vcxproj" Id="49985e15-7489-45d8-83fa-abf4a03a588b" />
+</Solution>
