@@ -23,6 +23,7 @@ int Tensor::get_index(int n, int c, int h, int w) const {
     return ((n * channels_ + c) * height_ + h) * width_ + w;
 }
 
+
 float& Tensor::get(int n, int c, int h, int w) {
     return data_v[get_index(n, c, h, w)];
 }
