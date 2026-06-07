@@ -18,7 +18,7 @@ private:
     Tensor grad_bias_;
 
     // 前向缓存：保存展平后的输入矩阵
-    Tensor cached_flat_input_;
+    Tensor input_cache_;
 public:
     // 构造函数：in_features 输入特征数（C*H*W），out_features 输出特征数
     DenseLayer(int in_features, int out_features);
