@@ -148,6 +148,7 @@
     <ClInclude Include="include\core\Tensor.h" />
     <ClInclude Include="include\gui\Visualizer.h" />
     <ClInclude Include="include\layers\DenseLayer.h" />
+    <ClInclude Include="include\layers\Network.h" />
     <ClInclude Include="include\layers\PoolLayer.h" />
     <ClInclude Include="include\layers\ReluLayer.h" />
     <ClInclude Include="include\utils\MnistLoader.h" />
