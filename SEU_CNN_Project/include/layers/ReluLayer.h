@@ -20,11 +20,11 @@ public:
     Tensor backward(const Tensor& grad_output) override;
 
     // 没有可训练参数，无需更新
-    void update(float learning_rate) override {};
+    void update(float learning_rate) override ;
 
 
     // 重置梯度（无参数，无需操作）
-    void zero_grad() override {};
+    void zero_grad() override ;
 
     // 层名称
   //  const char* name() const override { return "ReLU"; }

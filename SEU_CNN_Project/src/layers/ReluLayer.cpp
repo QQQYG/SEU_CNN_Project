@@ -39,7 +39,7 @@ Tensor ReluLayer::backward(const Tensor& grad_out) {
     int H = input_cache_.h();
     int W = input_cache_.w();
 
-    Tensor grad_input=(N, C, H, W);   // 对输入的梯度
+    Tensor grad_input(N, C, H, W);   // 对输入的梯度
 
     for (int n = 0; n < N; ++n) {
         for (int c = 0; c < C; ++c) {
@@ -62,7 +62,7 @@ Tensor ReluLayer::backward(const Tensor& grad_out) {
     return grad_input;
 }
 
-void ReluLayer::update(float /*learning_rate*/) {
+void ReluLayer::update(float learning_rate) {
     // ReLU 层无可训练参数，空实现
 }
 
